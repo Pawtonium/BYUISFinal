@@ -1,0 +1,104 @@
+:root {
+    /* btw! im not actually this good with color choises. this is from https://catppuccin.com/ */
+
+    /* also since i already know css, i am assigning it in a fancy way that wasn't described in the modules */
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --base: #1e1e2e;
+    --text: #cdd6f4;
+}
+
+body {
+    background-color: var(--base);
+    color: var(--text);
+    /* dapper font */
+    font-family: 'JetBrains Mono', monospace; 
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #181825;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    background-color: #11111b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tableau-container {
+    background-color: #181825;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+h1, h2, h3 {
+    color: var(--mauve);
+}
+
+a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--flamingo);
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--mauve);
+    color: var(--base);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.nav-link:hover {
+    background-color: var(--pink);
+    color: var(--base);
+}
+
+ul, ol {
+    color: var(--peach);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+} 
